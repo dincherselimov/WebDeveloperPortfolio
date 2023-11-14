@@ -1,0 +1,14 @@
+.footer{
+    text-align:center;
+    justify-content:center;
+    display:flex;
+    height:70px;
+    align-items:center;
+    
+}
+
+.footer p {
+    margin-right:50px;
+    font-size:20px;
+    color:#0e2355;
+}

@@ -1,0 +1,92 @@
+.max-width_projects {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+  }
+  
+
+  .projects
+  {
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /*  Service  */
+
+  .projects {
+    color: #0e2355;
+   
+  }
+  
+  
+
+  .projects .title::after {
+    content: "What I Provide ?";
+  }
+  
+  
+  .intern,
+  .project {
+    list-style: none;
+  }
+  
+
+  .project::before {
+    content: "✪ ";
+    color: #1e3551;
+  }
+  
+  
+  /*  Projects  */
+  .projects .title::after {
+    content: "What I did ?";
+    background:transparent;
+  }
+  
+  .projects .carousel .card {
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  .projects .carousel .card:hover {
+    background: rgba(17, 17, 17, 0.35);
+    border-radius: 20px;
+  }  
+  .projects-p{
+    font-size:18px;
+  }
+  .projects .carousel .card .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+  }
+  .carousel
+  {
+    display:flex;
+  }
+  .projects .carousel .card:hover .box {
+    transform: scale(1.05);
+  }
+  
+  .projects .carousel .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+  }
+  
+  .projects .carousel .card img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 30%;
+    border: 5px solid #888c8d;
+    transition: all 0.3s ease;
+  }
+  
+.newsletter_text{
+  text-align:center;
+}

@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* :root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+} */
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+/* body {
+  background:white;
+} */
+body {
+  background: url('/mm.jpg') center/cover no-repeat; /* Background image */
+  animation: backgroundAnimation 20s ease-in-out infinite; /* Breathing animation (20s duration) */
+  color: white; /* Text color */
+  padding: 20px;
+  background-attachment:fixed
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background-size: 100% 100%;
+  }
+  25% {
+    background-size: 110% 110%;
+  }
+  50% {
+    background-size: 105% 105%;
+  }
+  75% {
+    background-size: 115% 115%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+}
+
