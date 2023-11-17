@@ -17,24 +17,14 @@
 } */
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    margin:0px;
+    padding:0px;   
+    background: url('/mm.jpg') center/cover no-repeat; /* Background image */
+    animation: backgroundAnimation 20s ease-in-out infinite; /* Breathing animation (20s duration) */
+    color: white; /* Text color */
+    background-attachment:fixed
 }
-/* body {
-  background:white;
-} */
-body {
-  background: url('/mm.jpg') center/cover no-repeat; /* Background image */
-  animation: backgroundAnimation 20s ease-in-out infinite; /* Breathing animation (20s duration) */
-  color: white; /* Text color */
-  padding: 20px;
-  background-attachment:fixed
-}
+
 
 @keyframes backgroundAnimation {
   0% {
