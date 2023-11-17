@@ -5,10 +5,9 @@ import Footer from "../components/Footer";
 export default function PageLayout({ children }: { children: ReactNode }) {
   return (
     <div>
-      <Header />
+      <Header/>
        <main>{children}</main>
-      <Footer />
-      
+      {/* <Footer /> */}
     </div>
   );
 }

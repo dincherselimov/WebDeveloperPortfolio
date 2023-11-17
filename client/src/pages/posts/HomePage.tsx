@@ -11,9 +11,10 @@ export default function HomePage(){
     return (
         <PageLayout>
           <IntroSection/>
-          <HomeAboutMe/>
+          {/* <HomeAboutMe/>
           <HomeSkills/>
-          <HomeProjects/>
+          <HomeProjects/> */}
       </PageLayout>
-    );
+
+      );
 }

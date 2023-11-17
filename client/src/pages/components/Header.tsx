@@ -1,40 +1,45 @@
-import Link from "next/link";
-import React, { useState } from "react";
+import "@fortawesome/fontawesome-free/css/all.css";
+import Image from "next/image";
 
-
-export default function Header() {
-  /**
-   * The initial state of the hamburger menu is closed
-   */
-  const [menuIsOpen, setMenuIsOpen] = useState(false);
-
-  const toggleMenu = () => {
-    /**
-     * Toggle the menuIsOpen state when the hamburger icon is clicked
-     */
-    setMenuIsOpen(!menuIsOpen);
-  }
-
+const Header = () => {
   return (
-    <header className="topHeader">
-      <nav className="topNav">
-        {/* Hamburger menu icon */}
-        <div className="hamburger" onClick={toggleMenu}>
+    <div style={{ maxWidth: "1380px", margin: "auto", paddingTop: "20px" }}>
+      <nav
+        className={`flex flex-col md:flex-row items-center justify-between p-4 md:p-8`}
+      >
+        <div className="flex items-center mb-4 md:mb-0">
+          <div className="image-container mr-4">
+            <Image
+              className="LogoImage"
+              src="/DSelimov3.png"
+              alt="Description of the image"
+              width={200}
+              height={200}
+            />
+          </div>
         </div>
-        
-        {/* Conditional class for the ul element */}
-        <ul className={`topUl ${menuIsOpen ? 'open' : ''}`}>
-          <li className="topHome">
-            <Link href="/">Home</Link>
-          </li>
-          {/* <li className="topAbout">
-            <Link href="/about">About</Link>
-          </li> */}
-          <li className="topContact">
-            <Link href="/Contact">Contact</Link>
-          </li>
-        </ul>
+        <div className={`socialtop`}>
+          <div className="top-social flex items-center space-x-2">
+            <a href="#">
+              <i className="fab fa-facebook"></i>
+            </a>
+            <a href="#">
+              <i className="fab fa-twitter"></i>
+            </a>
+            <a href="#">
+              <i className="fab fa-instagram"></i>
+            </a>
+            <a href="#">
+              <i className="fab fa-pinterest"></i>
+            </a>
+            <a href="#">
+              <i className="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
       </nav>
-    </header>
+    </div>
   );
-}
+};
+
+export default Header;
