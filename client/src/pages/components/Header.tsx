@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <div style={{ maxWidth: "1380px", margin: "auto", paddingTop: "20px" }}>
       <nav
-        className={`flex flex-col md:flex-row items-center justify-between p-4 md:p-8`}
+        className={`flex  md:flex-row items-center justify-between p-4 lg:p-8`}
       >
         <div className="flex items-center mb-4 md:mb-0">
           <div className="image-container mr-4">
@@ -30,10 +30,10 @@ const Header = () => {
               <i className="fab fa-instagram"></i>
             </a>
             <a href="#">
-              <i className="fab fa-pinterest"></i>
+              <i className="fab fa-github"></i>
             </a>
             <a href="#">
-              <i className="fab fa-youtube"></i>
+              <i className="fab fa-linkedin-in"></i>
             </a>
           </div>
         </div>
