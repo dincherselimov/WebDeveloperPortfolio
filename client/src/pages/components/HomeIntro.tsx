@@ -1,17 +1,34 @@
 import React from "react";
 import Image from "next/image";
+import { useState, useEffect } from "react";
 
 export default function IntroSection() {
+  const [text, setText] = useState("");
+
+  const [fullText, setFullText] = useState(
+    "I am Dincher Selimov and I specialize in web development."
+  );
+
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    if (index < fullText.length) {
+      setTimeout(() => {
+        setText(text + fullText[index]);
+        setIndex(index + 1);
+      }, 60);
+    }
+  }, [index, fullText, text]);
+
   return (
     <section className="welcomeSection">
       <div className="container">
         <div className="content">
-          
           <div className="about_me">
             <h1>
               Welcome,
-              <br />   
-              I am Dincher Selimov, and I specialize in web development.
+              <br />
+              {text}
             </h1>
             <div className="social-icons">
               <link
@@ -32,7 +49,10 @@ export default function IntroSection() {
                   <a target="_blank" href="https://github.com/dincherselimov">
                     <i className="fab fa-github"></i>
                   </a>
-                  <a target="_blank" href="https://www.linkedin.com/in/dincher-selimov-6b069b209/">
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/dincher-selimov-6b069b209/"
+                  >
                     <i className="fab fa-linkedin-in"></i>
                   </a>
                 </div>
@@ -42,7 +62,7 @@ export default function IntroSection() {
           <div className="dinko">
             {/* <img className="me" src="me.jpg" alt="" /> */}
             <Image
-             className="me"
+              className="me"
               src="/me.jpg"
               width={400}
               height={400}
