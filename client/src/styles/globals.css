@@ -25,6 +25,9 @@ body {
     background-attachment:fixed
 }
 
+h1 {
+  font-size:24px;
+}
 
 @keyframes backgroundAnimation {
   0% {

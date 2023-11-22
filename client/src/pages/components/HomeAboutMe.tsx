@@ -9,7 +9,7 @@ export default function HomeAboutMe() {
     <div className="max-width">
       <h2 className="title">About Me</h2>
       <div className="about-content">
-        <div className="column left">
+        <div className="image-about column left">
          <Image 
          src={"webdev.svg"} 
          width={300}

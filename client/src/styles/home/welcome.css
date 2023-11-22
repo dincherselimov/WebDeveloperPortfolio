@@ -27,23 +27,21 @@
   transition: color 0.5s;
 }
 
-/* Mobile Styles */
 @media screen and (max-width: 992px) {
-  .social-links {
-   
-  }
-
+ 
   .dinko {
     padding: 30px;
-   
   }
+
+ 
 
   .me {
     border-radius: 10%;
   }
 }
 
-/* Tablet Styles */
+
+
 @media screen and (min-width: 992px) and (max-width: 1400px) {
   .welcomeSection {
     width: 100%;

@@ -18,7 +18,7 @@
     border-radius: 60px;
   }
   .skills .title::after {
-    content: "—What I Know ?—";
+    content: "—What I Know?—";
   }
   
   .skills .skills-content .column {
@@ -124,4 +124,12 @@
   .skills-content .right .django::before {
     width: 40%;
   }
-  
+
+@media only screen and (max-width:992px){
+  .skills .skills-content .column{
+    width:100%;
+    padding:30px
+  }
+}
+
+
