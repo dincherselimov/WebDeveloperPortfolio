@@ -1,6 +1,5 @@
 import '@/styles/globals.css'
 import '@/styles/home/homepage.css'
-import '@/styles/home/footer.css'
 import '@/styles/home/welcome.css'
 import '@/styles/home/whoAmI.css'
 import '@/styles/home/skills.css'

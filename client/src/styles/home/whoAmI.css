@@ -31,7 +31,7 @@
     text-align: center;
     font-size: 40px;
     font-weight: 500;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     padding-bottom: 20px;
     font-family: "Ubuntu", sans-serif;
     color:#0e2355;
@@ -60,7 +60,7 @@
 
  
   .about .title::after {
-    content: "—Who I Am ?—";
+    content: "—Who I Am?—";
     text-overflow: ellipsis;
     display: -webkit-inline-box;
     -webkit-line-clamp: 3;
@@ -83,7 +83,7 @@
   }
   
   .about .about-content .right .text {
-    font-size: 28px;
+    font-size: 32px;
     font-weight: 600;
     margin-bottom: 10px;
     color:#0e2355
@@ -123,5 +123,27 @@
     animation: pulsate 1s ease-in-out;
   }
   
+  @media only screen and (max-width:992px){
+    .about-content{
+    display: flex;
+    flex-direction: column;
+    }
+
+    .about .about-content .left{
+      width:100%;
+      padding:30px;
+      height:unset;
+    }
+
+    .about .about-content .left img{
+      height:unset;
+    }
+
+    .about .about-content .right{
+      width:100%;
+      padding:30px;
+    }
+
+  }
   
   
