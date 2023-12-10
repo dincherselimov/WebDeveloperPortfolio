@@ -4,7 +4,7 @@ import IntroSection from "../components/HomeIntro";
 import HomeAboutMe from "../components/HomeAboutMe";
 import HomeSkills from "../components/HomeSkills";
 import HomeProjects from "../components/HomeProjects";
-import CardData from "../components/CardData";
+// import CardData from "../components/CardData";
 import ContentBox from "../components/ContentBox";
 
 

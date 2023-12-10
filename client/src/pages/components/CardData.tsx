@@ -1,11 +1,11 @@
 import React from "react";
 import Image from "next/image";
 
-export default [
+const skills = [
   {
-    img: "",
+    img: "112",
     name: "HTML",
-    description: "Some description about my html skills",
+    description: "Some description about my HTML skills",
   },
   {
     img: "",
@@ -20,7 +20,7 @@ export default [
   {
     img: "",
     name: "Next.js",
-    description: "Some description about my next.js skills",
+    description: "Some description about my Next.js skills",
   },
   {
     img: "",
@@ -48,3 +48,5 @@ export default [
     description: "Some description about my Version Control Skills",
   },
 ];
+
+export default skills;
