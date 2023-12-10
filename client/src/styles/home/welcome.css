@@ -48,6 +48,7 @@
     height: 25rem;
     display: flex;
     align-items: center;
+   
   }
 
   .welcomeSection h1 {
@@ -100,6 +101,7 @@
     position: relative;
     overflow: hidden;
     transition: transform 0.5s;
+  
   }
 
   .social-links a .fab {
@@ -141,10 +143,12 @@
     height: 25rem;
     display: flex;
     align-items: center;
+    background: #48494433;
+    border-radius: 40px;
   }
  
   .welcomeSection h1 {
-    color: #0e2355;
+    color: white;
     font-size: 32px;
     padding-bottom:20px;
     font-weight:600;
@@ -157,6 +161,7 @@
     width: 250px;
     height: 100%;
     border-radius: 120px;
+    background: #fbfbfbab;
   } 
   .content {
     display: flex;
@@ -185,6 +190,7 @@
     position: relative;
     overflow: hidden;
     transition: transform 0.5s;
+    background: #fcc200;
   }
   
   .social-links a .fab {

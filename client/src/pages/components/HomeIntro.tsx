@@ -64,9 +64,9 @@ export default function IntroSection() {
             {/* <img className="me" src="me.jpg" alt="" /> */}
             <Image
               className="me"
-              src="/me.jpg"
-              width={400}
-              height={400}
+              src="/me-removed-bg.png"
+              width={500}
+              height={500}
               alt="me"
             />
           </div>
