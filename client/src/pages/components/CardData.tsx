@@ -42,4 +42,9 @@ export default [
     name: "Version Control",
     description: "Some description about my Version Control Skills",
   },
+  {
+    img: "me.jpg",
+    name: "Version Control",
+    description: "Some description about my Version Control Skills",
+  },
 ];
