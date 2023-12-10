@@ -11,15 +11,15 @@ import ContentBox from "../components/ContentBox";
 
 export default function HomePage(){
 
-    const contBox = CardData.map((item) => {
-        return <ContentBox img={item.img} name={item.name} description={item.description}/>
-    })
+    // const contBox = CardData.map((item) => {
+    //     return <ContentBox img={item.img} name={item.name} description={item.description}/>
+    // })
       
     return (
         <PageLayout>
           <IntroSection/>
           <HomeAboutMe/>
-          <div>{contBox}</div>
+          {/* <div>{contBox}</div> */}
           {/* <HomeSkills/> */}
           {/* <HomeProjects/> */}
       </PageLayout>
