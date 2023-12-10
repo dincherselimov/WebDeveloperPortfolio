@@ -4,6 +4,7 @@ import DownloadButton from "./DowloadCV";
 
 
 export default function HomeAboutMe() {
+  
   return (
     <section className="about" id="about">
     <div className="max-width">
@@ -11,7 +12,7 @@ export default function HomeAboutMe() {
       <div className="about-content">
         <div className="image-about column left">
          <Image 
-         src={"webdev.svg"} 
+         src={"/ai.jpg"} 
          width={300}
          height={200}
          alt={""}         
@@ -30,3 +31,5 @@ export default function HomeAboutMe() {
   </section>
   );
 }
+
+
