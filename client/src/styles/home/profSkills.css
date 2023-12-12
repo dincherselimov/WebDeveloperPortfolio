@@ -1,0 +1,100 @@
+.skill-section {
+
+    max-width: 1300px;
+    margin: auto;
+  }
+  
+  .left-ul,
+  .right-ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Add any additional styling as needed */
+  
+ .prof-title {
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  font-family: "Ubuntu", sans-serif;
+  color:white;
+}
+
+.prof-title::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  transform: translateX(-50%);
+}
+
+
+ .prof-title::after {
+  content: "—Skills?—";
+  text-overflow: ellipsis;
+  display: -webkit-inline-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  font-size: 20px;
+  color: white;
+  padding: 0 5px;
+  transform: translateX(-50%);
+}
+
+.li-items{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.left-li::before, .right-li::before {
+  content: "✪ ";
+  color: white;
+  margin:10px;
+}
+
+.left-li, .right-li{
+  width: 90%;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 40px;
+}
+
+.right-li-animation {
+
+  animation: shimmy 2s;
+
+}
+
+@keyframes shimmy {
+  0% {
+    transform: translate(400px, 0);    
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+
+.left-li-animation {
+  animation: slideFromLeft 2s;
+}
+
+@keyframes slideFromLeft {
+  0% {
+    transform: translate(-400px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}

@@ -2,9 +2,10 @@ import React from "react";
 import PageLayout from "./Layout";
 import IntroSection from "../components/HomeIntro";
 import HomeAboutMe from "../components/HomeAboutMe";
-// import HomeSkills from "../components/HomeSkills";
+import HomeSkills from "../components/HomeSkills";
 // import HomeProjects from "../components/HomeProjects";
 import ContentBox from "../components/ContentBox";
+import ProfessionalSkill from "../components/ProfesionalSkills";
 
 export default function HomePage() {
   <link
@@ -80,6 +81,7 @@ export default function HomePage() {
         <div className="content-main">{contBox}</div>
       </section>
 
+      <ProfessionalSkill/>
       {/* <HomeSkills/> */}
       {/* <HomeProjects/> */}
     </PageLayout>
