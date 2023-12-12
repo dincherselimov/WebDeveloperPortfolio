@@ -6,16 +6,13 @@ import HomeAboutMe from "../components/HomeAboutMe";
 // import HomeProjects from "../components/HomeProjects";
 import ContentBox from "../components/ContentBox";
 
-import { faHtml5, faCss3, faJs, faReact, faPhp, faJava } from '@fortawesome/free-brands-svg-icons';
-import { faCodeBranch } from "@fortawesome/free-solid-svg-icons/faCodeBranch";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function HomePage() {
   const skills = [
     {
       id: 1,
       // img:'',
-      img: <FontAwesomeIcon icon={faCss3}></FontAwesomeIcon>,
+      img: '',
       name: "HTML",
       description: "Some description about my HTML skills",
     },
@@ -23,7 +20,7 @@ export default function HomePage() {
       id: 2,
       // img:'',
 
-      img: <FontAwesomeIcon icon={faCss3}></FontAwesomeIcon>,
+      img: '',
       name: "CSS3",
       description: "Some description about my CSS skills",
     },
@@ -31,7 +28,7 @@ export default function HomePage() {
       id: 3,
       // img:'',
 
-      img: <FontAwesomeIcon icon={faJs}></FontAwesomeIcon>,
+      img: '',
       name: "JavaScript",
       description: "Some description about my JS skills",
     },
@@ -39,7 +36,7 @@ export default function HomePage() {
       id: 4,
       // img:'',
 
-      img: <FontAwesomeIcon icon={faReact}></FontAwesomeIcon>,
+      img: '',
       name: "Next.js",
       description: "Some description about my Next.js skills",
     },
@@ -47,7 +44,7 @@ export default function HomePage() {
       id: 5,
       // img:'',
 
-      img: <FontAwesomeIcon icon={faReact}></FontAwesomeIcon>,
+      img: '',
       name: "React",
       description: "Some description about my React Skills",
     },
@@ -55,7 +52,7 @@ export default function HomePage() {
       id: 6,
       // img:'',
 
-      img: <FontAwesomeIcon icon={faPhp}></FontAwesomeIcon>,
+      img: '',
       name: "PHP",
       description: "Some description about my PHP skills",
     },
@@ -63,7 +60,7 @@ export default function HomePage() {
       id: 7,
       // img:'',
 
-      img: <FontAwesomeIcon icon={faJava}></FontAwesomeIcon>,
+      img: '',
       name: "Java OOP",
       description: "Some description about my Java skills",
     },
@@ -71,7 +68,7 @@ export default function HomePage() {
       id: 8,
       // img:'',
 
-      img: <FontAwesomeIcon icon={faCodeBranch}></FontAwesomeIcon>,
+      img: '',
       name: "Version Control",
       description: "Some description about my Version Control Skills",
     },
