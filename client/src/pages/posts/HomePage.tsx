@@ -15,7 +15,7 @@ export default function HomePage() {
     {
       id: 1,
       // img:'',
-      img: <FontAwesomeIcon icon={faHtml5}></FontAwesomeIcon>,
+      img: <FontAwesomeIcon icon={faCss3}></FontAwesomeIcon>,
       name: "HTML",
       description: "Some description about my HTML skills",
     },
