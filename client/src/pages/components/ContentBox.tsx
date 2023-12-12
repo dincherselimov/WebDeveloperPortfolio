@@ -1,7 +1,5 @@
 import React from "react";
 
-
-// Define the type for the props
 interface ContentBoxProps {
   img: React.ReactNode; 
   name: string;
@@ -14,8 +12,8 @@ function ContentBox(props: ContentBoxProps) {
     <div className="column-new">
       <div className="card">
         <div className="icon-wrapper">{props.img}</div>
-        <h3>{props.name}</h3>
-        <p>{props.description}</p>
+        <h3 className="prop_name">{props.name}</h3>
+        <p className="prop_desc">{props.description}</p>
       </div>
     </div>
   );
