@@ -10,6 +10,9 @@ import { faCodeBranch } from "@fortawesome/free-solid-svg-icons/faCodeBranch";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
+
+
+
 export default function HomePage() {
   const skills = [
     {
