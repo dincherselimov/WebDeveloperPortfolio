@@ -1,3 +1,10 @@
+.content-main{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1300px;
+  margin: auto;
+}
+
 .column-new {
     width: 100%;
     padding: 0 1em 1em 1em;
@@ -8,31 +15,31 @@
     width: 100%;
     height: 100%;
     padding: 2em 1.5em;
-    background: linear-gradient(#ffffff 50%, #2c7bfe 50%);
-    background-size: 100% 200%;
+    background-image: linear-gradient(33deg, #fcc200 50%, #ffffffc4 70%);    background-size: 100% 200%;
     background-position: 0 2.5%;
-    border-radius: 5px;
+    border-radius: 20px;
     box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
     cursor: pointer;
     transition: 0.5s;
   }
   
-  h3 {
+  .prop_name {
     font-size: 20px;
-    font-weight: 600;
-    color: #1f194c;
+    font-weight: 700;
+    color: #344767;
     margin: 1em 0;
   }
   
-  p {
-    color: #575a7b;
-    font-size: 15px;
+  .prop_desc {
+    color: #344767;
+    font-size: 18px;
     line-height: 1.6;
     letter-spacing: 0.03em;
+    font-weight: 500;
   }
   
   .icon-wrapper {
-    background-color: #2c7bfe;
+    background-color: #344767;
     position: relative;
     margin: auto;
     font-size: 30px;
@@ -51,7 +58,8 @@
   
   .card:hover .icon-wrapper {
     background-color: #ffffff;
-    color: #2c7bfe;
+    color: #8b0000;
+    
   }
   
   .card:hover h3 {
@@ -78,8 +86,51 @@
   
   @media screen and (min-width: 992px) {
     .column-new {
-      flex: 0 0 25%;
+      flex: 0 0 33%;
       max-width: 25%;
+      margin-bottom:20px;
     }
   }
   
+
+ .personal_title {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    font-family: "Ubuntu", sans-serif;
+    color:white;
+  }
+  
+  .personal_title::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    transform: translateX(-50%);
+  }
+  
+ 
+   .personal_title::after {
+    content: "—Skills?—";
+    text-overflow: ellipsis;
+    display: -webkit-inline-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    font-size: 20px;
+    color: white;
+    padding: 0 5px;
+    transform: translateX(-50%);
+  }
+
+  .personal_skills_section{
+    background: #48494433;
+    border-radius: 40px;
+  }
