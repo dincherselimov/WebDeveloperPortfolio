@@ -8,8 +8,8 @@ import ContentBox from "../components/ContentBox";
 
 
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import * as FontAwesomeIcons from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function HomePage() {
   const skills = [
