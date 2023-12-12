@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 export default function IntroSection() {
   const [text, setText] = useState("");
 
-  const [fullText, setFullText] = useState(
+  const [fullText] = useState(
     "I am Dincher Selimov and I specialize in web development."
   );
 

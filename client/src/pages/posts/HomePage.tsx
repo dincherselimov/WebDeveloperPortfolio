@@ -2,13 +2,12 @@ import React from "react";
 import PageLayout from "./Layout";
 import IntroSection from "../components/HomeIntro";
 import HomeAboutMe from "../components/HomeAboutMe";
-import HomeSkills from "../components/HomeSkills";
-import HomeProjects from "../components/HomeProjects";
+// import HomeSkills from "../components/HomeSkills";
+// import HomeProjects from "../components/HomeProjects";
 import ContentBox from "../components/ContentBox";
 import { faHtml5, faCss3, faJs, faReact, faPhp, faJava } from '@fortawesome/free-brands-svg-icons';
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCodeBranch } from "@fortawesome/free-solid-svg-icons/faCodeBranch";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
 export default function HomePage() {
