@@ -7,6 +7,8 @@ import '@/styles/home/projects.css'
 import '@/styles/home/hiremebutton.css'
 import '@/styles/home/navigation.css'
 import '@/styles/home/card.css'
+import '@/styles/home/profSkills.css'
+
 
 
 
