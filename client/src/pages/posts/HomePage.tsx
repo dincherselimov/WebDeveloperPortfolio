@@ -8,11 +8,15 @@ import ContentBox from "../components/ContentBox";
 
 
 export default function HomePage() {
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
   const skills = [
     {
       id: 1,
       // img:'',
-      img: '',
+      img: <i className="fab fa-html5"></i>,
       name: "HTML",
       description: "Some description about my HTML skills",
     },
@@ -20,7 +24,7 @@ export default function HomePage() {
       id: 2,
       // img:'',
 
-      img: '',
+      img: <i className="fab fa-css3"></i>,
       name: "CSS3",
       description: "Some description about my CSS skills",
     },
