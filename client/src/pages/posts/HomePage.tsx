@@ -2,10 +2,10 @@ import React from "react";
 import PageLayout from "./Layout";
 import IntroSection from "../components/HomeIntro";
 import HomeAboutMe from "../components/HomeAboutMe";
-import HomeSkills from "../components/HomeSkills";
-// import HomeProjects from "../components/HomeProjects";
+import HomeProjects from "../components/HomeProjects";
 import ContentBox from "../components/ContentBox";
 import ProfessionalSkill from "../components/ProfesionalSkills";
+import Motivation from "../components/Motivation";
 
 export default function HomePage() {
   <link
@@ -80,10 +80,9 @@ export default function HomePage() {
         <h2 className="personal_title">My Personal skills</h2>
         <div className="content-main">{contBox}</div>
       </section>
-
       <ProfessionalSkill/>
-      {/* <HomeSkills/> */}
-      {/* <HomeProjects/> */}
+      <HomeProjects/>
+      <Motivation/>
     </PageLayout>
   );
 }

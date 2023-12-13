@@ -1,40 +1,44 @@
 import React from "react";
 import { useEffect } from "react";
 
-interface AnimatedItemProps {
-    classList: string;
-  }
-  
-  const ProfessionalSkill = () => {
-    useEffect(() => {
-      // Add scroll animation initialization here
-      const leftLiItems = document.querySelectorAll<HTMLLIElement>(".left-li");
-      const rightLiItems = document.querySelectorAll<HTMLLIElement>(".right-li");
-  
-      window.addEventListener("scroll", () => {
+// interface AnimatedItemProps {
+//   classList: string;
+// }
+
+
+const ProfessionalSkill = () => {
+  useEffect(() => {
+    // Add scroll animation initialization here
+    const leftLiItems = document.querySelectorAll<HTMLLIElement>(".left-li");
+    const rightLiItems = document.querySelectorAll<HTMLLIElement>(".right-li");
+
+    window.addEventListener("scroll", () => {
+      animateOnScroll(leftLiItems, "left-li-animation");
+      animateOnScroll(rightLiItems, "right-li-animation");
+    });
+
+    return () => {
+      window.removeEventListener("scroll", () => {
         animateOnScroll(leftLiItems, "left-li-animation");
         animateOnScroll(rightLiItems, "right-li-animation");
       });
-  
-      return () => {
-        window.removeEventListener("scroll", () => {
-          animateOnScroll(leftLiItems, "left-li-animation");
-          animateOnScroll(rightLiItems, "right-li-animation");
-        });
-      };
-    }, []);
-  
-    const animateOnScroll = (items: NodeListOf<HTMLLIElement>, animationClass: string) => {
-      items.forEach((item) => {
-        const itemTop = item.getBoundingClientRect().top;
-        const windowHeight = window.innerHeight;
-  
-        if (itemTop < windowHeight - 10) {
-          item.classList.add(animationClass);
-        }
-      });
     };
-  
+  }, []);
+
+  const animateOnScroll = (
+    items: NodeListOf<HTMLLIElement>,
+    animationClass: string
+  ) => {
+    items.forEach((item) => {
+      const itemTop = item.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+
+      if (itemTop < windowHeight - 10) {
+        item.classList.add(animationClass);
+      }
+    });
+  };
+
   return (
     <section className="skill-section">
       <div className="prof-title-div">
@@ -43,10 +47,10 @@ interface AnimatedItemProps {
 
       <div className="li-items">
         <ul className="left-ul">
-          <li className="left-li">  
+          <li className="left-li">
             Infrastructure Management: Proficient in working with Virtual
             Machines and maintaining Apache/Nginx servers, ensuring seamless
-            website performance and reliability.  
+            website performance and reliability.
           </li>
           <br />
           <li className="left-li">
@@ -82,11 +86,11 @@ interface AnimatedItemProps {
             writing reusable code for improved efficiency.
           </li>
         </ul>
+       
       </div>
+    
     </section>
   );
 };
 
 export default ProfessionalSkill;
-
-
