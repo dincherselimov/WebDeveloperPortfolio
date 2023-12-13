@@ -1,5 +1,4 @@
 import React from "react-dom";
-import HireMeButton from "./HireMeButton";
 
 export default function HomeSkills() {
   return (

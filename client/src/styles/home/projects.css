@@ -13,6 +13,8 @@
 
   .projects {
     color: #0e2355;
+    background: #48494433;
+     border-radius: 40px;
    
   }
   
@@ -35,11 +37,11 @@
   
   /*  Projects  */
   .projects .title::after {
-    content: "What I did ?";
+    content: "—What I did?—";
     background:transparent;
   }
   
-  .projects .carousel .card {
+  .projects .carousel .card2 {
     border-radius: 6px;
     padding: 25px 35px;
     text-align: center;
@@ -47,14 +49,32 @@
     transition: all 0.3s ease;
   }
   
-  .projects .carousel .card:hover {
+  .projects .carousel .card2 {
     background: rgba(17, 17, 17, 0.35);
     border-radius: 20px;
+    margin-bottom:30px;
   }  
+  /* .projects .carousel .card2:hover {
+    background: #fcc200;
+    border-radius: 20px;
+    .text {
+      color: black;
+    }
+    .mini-title{
+      color: black;
+    }
+  }   */
+
+  .magento-img{
+    background:white;
+  }
   .projects-p{
     font-size:18px;
+    color:white;
+    width: 80%;
+    line-height: 40px;
   }
-  .projects .carousel .card .box {
+  .projects .carousel .card2 .box {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -64,18 +84,26 @@
   .carousel
   {
     display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
-  .projects .carousel .card:hover .box {
+  .projects .carousel .card2:hover .box {
     transform: scale(1.05);
   }
+
+  .mini-title{
+    color: #fcc200;
+    margin-bottom:15px;
+  }
   
-  .projects .carousel .card .text {
+  .projects .carousel .card2 .text {
     font-size: 24px;
     font-weight: 500;
     margin: 10px 0 7px 0;
+    color: #fcc200;
   }
   
-  .projects .carousel .card img {
+  .projects .carousel .card2 img {
     height: 150px;
     width: 150px;
     object-fit: cover;
