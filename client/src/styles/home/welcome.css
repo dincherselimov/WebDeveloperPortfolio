@@ -27,16 +27,39 @@
   transition: color 0.5s;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
  
   .dinko {
     padding: 30px;
   }
 
- 
-
   .me {
     border-radius: 10%;
+    width: 250px;
+    height: 100%;
+    background: #fbfbfbab;
+  }
+
+  .welcomeSection h1 {
+    color: white;
+    font-size: 32px;
+    padding-bottom: 20px;
+    font-weight: 600;
+  }
+  
+  .welcomeSection{
+    background: #48494433;
+    border-radius: 40px;
+  }
+  .social-links {
+    display:flex;
+    flex-wrap:wrap;
+  }
+  
+  .social-links a {
+   
+  
+    color: #fcc200;
   }
 }
 
@@ -136,6 +159,9 @@
     transform: translateY(-10px);
   }
 }
+
+
+
 
 @media only screen and (min-width:1400px){
   .welcomeSection {

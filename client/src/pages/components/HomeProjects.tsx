@@ -32,9 +32,12 @@ export default function HomeProjects() {
                 alt="portfolio"
               />
               <div className="text">Portfolio</div>
+              <p className="mini-title">
+                #Project Details:<br></br>
+              </p>
               <p className="projects-p">
-                #Project Details:- Personal Web Developer
-                Portfolio.Technologies: JavaScript, React, Next.js
+                 Personal Web Developer
+                  Portfolio.Technologies: JavaScript, React, Next.js
               </p>
             </div>
           </div>
