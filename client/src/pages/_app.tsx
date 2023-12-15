@@ -9,6 +9,8 @@ import '@/styles/home/navigation.css'
 import '@/styles/home/card.css'
 import '@/styles/home/profSkills.css'
 import '@/styles/home/motivation.css'
+import '@/styles/home/form.css'
+
 
 
 

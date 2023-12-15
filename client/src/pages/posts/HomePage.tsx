@@ -6,6 +6,7 @@ import HomeProjects from "../components/HomeProjects";
 import ContentBox from "../components/ContentBox";
 import ProfessionalSkill from "../components/ProfesionalSkills";
 import Motivation from "../components/Motivation";
+import Form from "../components/Form";
 
 export default function HomePage() {
   <link
@@ -82,6 +83,7 @@ export default function HomePage() {
       </section>
       <ProfessionalSkill/>
       <HomeProjects/>
+      <Form/>
       <Motivation/>
     </PageLayout>
   );

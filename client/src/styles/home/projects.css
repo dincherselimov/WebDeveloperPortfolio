@@ -13,7 +13,7 @@
 
   .projects {
     color: #0e2355;
-    background: #48494433;
+    /* background: #48494433; */
      border-radius: 40px;
    
   }
@@ -120,5 +120,11 @@
   .carousel{
     display:flex;
     flex-direction:column;
+  }
+}
+
+@media only screen and (max-width:768px){
+  .carousel{
+    padding:20px;
   }
 }
