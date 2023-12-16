@@ -123,8 +123,11 @@
   }
 }
 
-@media only screen and (max-width:768px){
+@media only screen and (max-width:1400px){
   .carousel{
     padding:20px;
   }
 }
+
+
+

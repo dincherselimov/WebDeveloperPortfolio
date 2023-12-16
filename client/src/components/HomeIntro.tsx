@@ -1,9 +1,11 @@
 import React from "react";
 import Image from "next/image";
 import { useState, useEffect } from "react";
-
+import socialLinks from "./SocialLinks";
 
 export default function IntroSection() {
+  const { facebook, twitter, instagram, github, linkedin } = socialLinks;
+
   const [text, setText] = useState("");
 
   const [fullText] = useState(
@@ -27,9 +29,9 @@ export default function IntroSection() {
         <div className="content">
           <div className="about_me">
             <h1>
-              Welcome,
+              Welcome, 
               <br />
-              {text}
+              {text} 
             </h1>
             <div className="social-icons">
               <link
@@ -38,22 +40,19 @@ export default function IntroSection() {
               />
               <div className="hero">
                 <div className="social-links">
-                  <a href="#" target="_blank">
+                  <a href={facebook} target="_blank">
                     <i className="fab fa-facebook-f"></i>
                   </a>
-                  <a href="#" target="_blank">
+                  <a href={instagram} target="_blank">
                     <i className="fab fa-instagram"></i>
                   </a>
-                  <a target="_blank" href="https://twitter.com/DincherSel32807">
+                  <a href={twitter} target="_blank">
                     <i className="fab fa-twitter"></i>
                   </a>
-                  <a target="_blank" href="https://github.com/dincherselimov">
+                  <a href={github} target="_blank">
                     <i className="fab fa-github"></i>
                   </a>
-                  <a
-                    target="_blank"
-                    href="https://www.linkedin.com/in/dincher-selimov-6b069b209/"
-                  >
+                  <a href={linkedin} target="_blank">
                     <i className="fab fa-linkedin-in"></i>
                   </a>
                 </div>

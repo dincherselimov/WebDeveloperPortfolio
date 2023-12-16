@@ -112,3 +112,10 @@
     padding-right:10px;
   }
 }
+
+@media only screen and (max-width:1400px){
+  .left-ul{
+    padding-left:20px;
+    padding-right:20px;
+  }
+}

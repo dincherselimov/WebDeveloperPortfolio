@@ -1,14 +1,10 @@
 import React from "react";
 import { useEffect } from "react";
 
-// interface AnimatedItemProps {
-//   classList: string;
-// }
 
 
 const ProfessionalSkill = () => {
   useEffect(() => {
-    // Add scroll animation initialization here
     const leftLiItems = document.querySelectorAll<HTMLLIElement>(".left-li");
     const rightLiItems = document.querySelectorAll<HTMLLIElement>(".right-li");
 

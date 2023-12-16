@@ -61,17 +61,7 @@
   }
 }
   
-  @media screen and (max-width:500px) {
-    
-  }
-  .image-container {
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    height: 6vh; 
-    background:#fcc200;
-    border-radius:10px;
-  }
+
   
 
   
