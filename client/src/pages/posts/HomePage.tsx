@@ -1,12 +1,12 @@
 import React from "react";
 import PageLayout from "./Layout";
-import IntroSection from "../components/HomeIntro";
-import HomeAboutMe from "../components/HomeAboutMe";
-import HomeProjects from "../components/HomeProjects";
-import ContentBox from "../components/ContentBox";
-import ProfessionalSkill from "../components/ProfesionalSkills";
-import Motivation from "../components/Motivation";
-import Form from "../components/Form";
+import IntroSection from "../../components/HomeIntro";
+import HomeAboutMe from "../../components/HomeAboutMe";
+import HomeProjects from "../../components/HomeProjects";
+import ContentBox from "../../components/ContentBox";
+import ProfessionalSkill from "../../components/ProfesionalSkills";
+import Motivation from "../../components/Motivation";
+import Form from "../../components/Form";
 
 export default function HomePage() {
   <link
