@@ -1,151 +1,143 @@
-  section {
-    padding: 30px 0;
-    
-  }
-  .hr-top {
-    margin-bottom:40px;
-  }
-  .hr-bottom{
-    margin-top:40px;
-    height:0.9px;
-  }
-  .max-width {
-    max-width: 1300px;
-    margin: auto;
-  }
-  .about
-   {
-    font-family: "Poppins", sans-serif;
-  }
-  
-  .about .about-content
-   {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  section .title {
-    position: relative;
-    text-align: center;
-    font-size: 40px;
-    font-weight: 500;
-    margin-bottom: 40px;
-    padding-bottom: 20px;
-    font-family: "Ubuntu", sans-serif;
-    color:white;
-  }
-  
-  section .title::before {
-    content: "";
-    position: absolute;
-    bottom: 0px;
-    left: 50%;
-    width: 180px;
-    height: 3px;
-    transform: translateX(-50%);
-  }
-  
-  section .title::after {
-    position: absolute;
-    bottom: -8px;
-    left: 50%;
-    font-size: 20px;
-    color: white;
-    padding: 0 5px;
-    transform: translateX(-50%);
-  }
-  
+section {
+  padding: 30px 0;
+}
+.hr-top {
+  margin-bottom: 40px;
+}
+.hr-bottom {
+  margin-top: 40px;
+  height: 0.9px;
+}
+.max-width {
+  max-width: 1300px;
+  margin: auto;
+}
+.about {
+  font-family: "Poppins", sans-serif;
+}
 
- 
-  .about .title::after {
-    content: "—Who I Am?—";
-    text-overflow: ellipsis;
-    display: -webkit-inline-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-  }
-  
-  .about .about-content .left {
-    width: 45%;
-  }
-  
-  .about .about-content .left img {
-    height: 400px;
-    width: 400px;
-    object-fit: cover;
-    border-radius: 20px;
-  }
-  
-  .about .about-content .right {
-    width: 55%;
-  }
-  
-  .about .about-content .right .text {
-    font-size: 32px;
-    font-weight: 600;
-    margin-bottom: 10px;
-    color:#fcc200;
-  }
-  
-  /* Linear Gradiant */
-  .about .about-content .right .text span {
-    /* color: #1e3551; */
-    background: linear-gradient(135deg, #041d3d, #fff, crimson);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  
-  .about .about-content .right p {
-    text-align: justify;
-    font-size: 20px;
-    color: white;
-    font-family: Sans-serif;
-  }
-  
-  .about .about-content .right a {
-    display: inline-block;
-    background: #fcc200;
-    color: black;
-    font-size: 20px;
-    font-weight: 500;
-    padding: 10px 30px;
-    margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid white;
-    transition: all 0.3s ease;
-    margin-top:90px;
-  }
-  
-  .about .about-content .right a:hover {
-    color: white;
-    border: 2px solid black;
-    background: #996515;
-    animation: pulsate 1s ease-in-out;
-  }
-  
-  @media only screen and (max-width:992px){
-    .about-content{
+.about .about-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+section .title {
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  font-family: "Ubuntu", sans-serif;
+  color: white;
+}
+
+section .title::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  transform: translateX(-50%);
+}
+
+section .title::after {
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  font-size: 20px;
+  color: white;
+  padding: 0 5px;
+  transform: translateX(-50%);
+}
+
+.about .title::after {
+  content: "—Who I Am?—";
+  text-overflow: ellipsis;
+  display: -webkit-inline-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.about .about-content .left {
+  width: 45%;
+}
+
+.about .about-content .left img {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.about .about-content .right {
+  width: 55%;
+}
+
+.about .about-content .right .text {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #fcc200;
+}
+
+/* Linear Gradiant */
+.about .about-content .right .text span {
+  /* color: #1e3551; */
+  background: linear-gradient(135deg, #041d3d, #fff, crimson);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about .about-content .right p {
+  text-align: justify;
+  font-size: 20px;
+  color: white;
+  font-family: Sans-serif;
+}
+
+.about .about-content .right a {
+  display: inline-block;
+  background: #fcc200;
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 30px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid white;
+  transition: all 0.3s ease;
+  margin-top: 90px;
+}
+
+.about .about-content .right a:hover {
+  color: white;
+  border: 2px solid black;
+  background: #996515;
+  animation: pulsate 1s ease-in-out;
+}
+
+@media only screen and (max-width: 992px) {
+  .about-content {
     display: flex;
     flex-direction: column;
-    }
-
-    .about .about-content .left{
-      width:100%;
-      padding:30px;
-      height:unset;
-    }
-
-    .about .about-content .left img{
-      height:unset;
-    }
-
-    .about .about-content .right{
-      width:100%;
-      padding:30px;
-    }
-
   }
-  
-  
+
+  .about .about-content .left {
+    width: 100%;
+    padding: 30px;
+    height: unset;
+  }
+
+  .about .about-content .left img {
+    height: unset;
+  }
+
+  .about .about-content .right {
+    width: 100%;
+    padding: 30px;
+  }
+}

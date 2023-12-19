@@ -17,18 +17,18 @@
 } */
 
 body {
-     /* margin:0px;
+  /* margin:0px;
     padding:0px;   
     background: url('/mm.jpg') center/cover no-repeat; 
     animation: backgroundAnimation 20s ease-in-out infinite; 
     color: white; 
     background-attachment:fixed */
 
-    background:#232b2b;
+  background: #232b2b;
 }
 
 h1 {
-  font-size:24px;
+  font-size: 24px;
 }
 
 @keyframes backgroundAnimation {
@@ -48,4 +48,3 @@ h1 {
     background-size: 100% 100%;
   }
 }
-
