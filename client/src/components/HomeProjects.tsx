@@ -1,7 +1,9 @@
 import React from "react-dom";
 import Image from "next/image";
+import PageContent from "../content/PageContent.json";
 
 export default function HomeProjects() {
+  const projects = PageContent.Projects;
   return (
     <section className="projects" id="projects">
       <div className="max-width">
@@ -15,11 +17,7 @@ export default function HomeProjects() {
               <p className="mini-title">
                 #Project Details:<br></br>
               </p>
-              <p className="projects-p">
-                Test case specification and development for DCAT-AP for a
-                German partner (Bable GmbH). Testbed development for IoT Protocols based on FI-WARE
-              </p>
-            
+              <p className="projects-p">{projects.DCATAP}</p>
             </div>
           </div>
           <div className="card2">
@@ -35,10 +33,7 @@ export default function HomeProjects() {
               <p className="mini-title">
                 #Project Details:<br></br>
               </p>
-              <p className="projects-p">
-                 Personal Web Developer
-                  Portfolio.Technologies: JavaScript, React, Next.js
-              </p>
+              <p className="projects-p">{projects.Portfolio}</p>
             </div>
           </div>
           <div className="card2">
@@ -48,22 +43,14 @@ export default function HomeProjects() {
               <div className="text">Newsletter and Trading Platform</div>
               <p className="mini-title">#Project Details:</p>
               <p className="projects-p">
-                Successfully designed, developed,
-                and maintained a trading website 
-                using WordPress. This project
-                showcased my ability to create
-                user-friendly and visually 
-                appealing front-end interfaces.
-                Proficiently processed and 
-                maintained user data within the trading platform, ensuring data
-                integrity, security, and accessibility
+                {projects.NewsletterAndTradingPlatform}
               </p>
             </div>
           </div>
           <div className="card2">
             <div className="box">
-              {/* <img src="magento.png" alt=""></img> */}
-              <Image className="magento-img"
+              <Image
+                className="magento-img"
                 src="/magento.png"
                 width={400}
                 height={400}
@@ -71,9 +58,7 @@ export default function HomeProjects() {
               />
               <div className="text">PHP Developer (initOS GmbH)</div>
               <p className="mini-title">#Project Details:</p>
-              <p className="projects-p">
-                Creating and Maintaining high quality PHP code
-              </p>
+              <p className="projects-p">{projects.Magento}</p>
             </div>
           </div>
         </div>

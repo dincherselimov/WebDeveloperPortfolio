@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
-
+import PageContent from '../content/PageContent.json';
 const Form = () => {
+const contactText = PageContent.ContactMe;
   useEffect(() => {
     const getReachOutText =
       document.querySelectorAll<HTMLLIElement>(".reach-out");
@@ -84,10 +85,7 @@ const Form = () => {
 
         <div className="contact-info">
           <p className="reach-out">
-            Feel free to reach out if you have any questions, suggestions, or
-            just want to say hello! You can use the form on the left to send me
-            a direct message, or connect with me through email or social media.
-            I am always excited to hear from you!
+           {contactText.contactMeText}
           </p>
         </div>
       </div>
