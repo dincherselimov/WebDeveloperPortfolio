@@ -7,62 +7,13 @@ import ContentBox from "../../components/ContentBox";
 import ProfessionalSkill from "../../components/ProfesionalSkills";
 import Motivation from "../../components/Motivation";
 import Form from "../../components/Form";
+import skills from "@/components/Skills";
 
 export default function HomePage() {
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
   />;
-  const skills = [
-    {
-      id: 1,
-      img: <i className="fab fa-html5"></i>,
-      name: "HTML",
-      description: "Some description about my HTML skills",
-    },
-    {
-      id: 2,
-      img: <i className="fab fa-css3"></i>,
-      name: "CSS3",
-      description: "Some description about my CSS skills",
-    },
-    {
-      id: 3,
-      img: <i className="fab fa-js"></i>,
-      name: "JavaScript",
-      description: "Some description about my JS skills",
-    },
-    {
-      id: 4,
-      img: <i className="fab fa-react"></i>,
-      name: "Next.js",
-      description: "Some description about my Next.js skills",
-    },
-    {
-      id: 5,
-      img: <i className="fab fa-react"></i>,
-      name: "React",
-      description: "Some description about my React Skills",
-    },
-    {
-      id: 6,
-      img: <i className="fab fa-php"></i>,
-      name: "PHP",
-      description: "Some description about my PHP skills",
-    },
-    {
-      id: 7,
-      img: <i className="fab fa-java"></i>,
-      name: "Java OOP",
-      description: "Some description about my Java skills",
-    },
-    {
-      id: 8,
-      img: <i className="fab fa-github"></i>,
-      name: "Version Control",
-      description: "Some description about my Version Control Skills",
-    },
-  ];
 
   const contBox = skills.map((item) => (
     <ContentBox
@@ -81,10 +32,10 @@ export default function HomePage() {
         <h2 className="personal_title">My Personal skills</h2>
         <div className="content-main">{contBox}</div>
       </section>
-      <ProfessionalSkill/>
-      <HomeProjects/>
-      <Form/>
-      <Motivation/>
+      <ProfessionalSkill />
+      <HomeProjects />
+      <Form />
+      <Motivation />
     </PageLayout>
   );
 }

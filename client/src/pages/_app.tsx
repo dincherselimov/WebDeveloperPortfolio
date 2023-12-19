@@ -10,9 +10,12 @@ import "@/styles/home/card.css";
 import "@/styles/home/profSkills.css";
 import "@/styles/home/motivation.css";
 import "@/styles/home/form.css";
-
 import type { AppProps } from "next/app";
+
+
 
 export default function App({ Component, pageProps }: AppProps) {
   return <Component {...pageProps} />;
 }
+
+
