@@ -1,26 +1,37 @@
-import React, { useEffect } from "react";
+// client/components/Form.tsx
+import React, { useState, useEffect, ChangeEvent, FormEvent } from 'react';
 import PageContent from '../content/PageContent.json';
-const Form = () => {
-const contactText = PageContent.ContactMe;
-  useEffect(() => {
-    const getReachOutText =
-      document.querySelectorAll<HTMLLIElement>(".reach-out");
 
-    window.addEventListener("scroll", () => {
-      animateOnScrollText2(getReachOutText, "reach-out-animation");
+interface FormData {
+  name: string;
+  email: string;
+  message: string;
+}
+
+const Form: React.FC = () => {
+  const [formData, setFormData] = useState<FormData>({
+    name: '',
+    email: '',
+    message: '',
+  });
+
+  const contactText = PageContent.ContactMe;
+
+  useEffect(() => {
+    const getReachOutText = document.querySelectorAll<HTMLLIElement>('.reach-out');
+
+    window.addEventListener('scroll', () => {
+      animateOnScrollText2(getReachOutText, 'reach-out-animation');
     });
 
     return () => {
-      window.removeEventListener("scroll", () => {
-        animateOnScrollText2(getReachOutText, "reach-out-animation");
+      window.removeEventListener('scroll', () => {
+        animateOnScrollText2(getReachOutText, 'reach-out-animation');
       });
     };
   }, []);
 
-  const animateOnScrollText2 = (
-    items: NodeListOf<HTMLLIElement>,
-    animationClass: string
-  ) => {
+  const animateOnScrollText2 = (items: NodeListOf<HTMLLIElement>, animationClass: string) => {
     items.forEach((item) => {
       const itemTop = item.getBoundingClientRect().top;
       const windowHeight = window.innerHeight;
@@ -31,12 +42,38 @@ const contactText = PageContent.ContactMe;
     });
   };
 
+  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({ ...prevData, [name]: value }));
+  };
+
+  const handleSubmit = async (e: FormEvent) => {
+    e.preventDefault();
+  
+    try {
+      const response = await fetch('https://web-developer-portfolio-delta.vercel.app/api/sendEmail', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+  
+      const data = await response.json();
+      console.log(data);
+  
+      // Handle success or error messages
+    } catch (error) {
+      console.error('Error submitting form:', error);
+    }
+  };
+  
   return (
     <section className="form-section">
       <div className="div-div">
         <div className="form-container">
           <h1 className="contact-me-from-title">Contact Me</h1>
-          <form className="form-form" method="post">
+          <form className="form-form" method="post" onSubmit={handleSubmit}>
             <div className="form-group">
               <label className="input-label" htmlFor="name">
                 Name
@@ -47,8 +84,9 @@ const contactText = PageContent.ContactMe;
                 type="text"
                 id="name"
                 name="name"
+                onChange={handleChange}
                 required
-              ></input>
+              />
             </div>
             <div className="form-group">
               <label className="input-label" htmlFor="email">
@@ -60,8 +98,9 @@ const contactText = PageContent.ContactMe;
                 type="email"
                 id="email"
                 name="email"
+                onChange={handleChange}
                 required
-              ></input>
+              />
             </div>
             <div className="form-group">
               <label className="input-label" htmlFor="message">
@@ -72,8 +111,9 @@ const contactText = PageContent.ContactMe;
                 placeholder="Enter your message"
                 id="message"
                 name="message"
+                onChange={handleChange}
                 required
-              ></textarea>
+              />
             </div>
             <div className="form-group">
               <button className="send-message" type="submit">
@@ -84,9 +124,7 @@ const contactText = PageContent.ContactMe;
         </div>
 
         <div className="contact-info">
-          <p className="reach-out">
-           {contactText.contactMeText}
-          </p>
+          <p className="reach-out">{contactText.contactMeText}</p>
         </div>
       </div>
     </section>
