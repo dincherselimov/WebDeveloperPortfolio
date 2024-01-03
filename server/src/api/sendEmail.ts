@@ -2,6 +2,11 @@ import { Request, Response } from 'express';
 import nodemailer from 'nodemailer';
 
 const sendEmail = async (req: Request, res: Response) => {
+
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'POST');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+  
   if (req.method === 'POST') {
     const { name, email, message } = req.body;
 
@@ -9,10 +14,10 @@ const sendEmail = async (req: Request, res: Response) => {
     const transporter = nodemailer.createTransport({
       service: 'gmail', // e.g., 'gmail'
       auth: {
-        user: 'dinchitoo@gmail.com',
-        pass: 'uvsp tflj udwh dmzj ',
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS,
       },
-      // debug: true, // Add this line
+      debug: true, 
     });
 
     // Email options
