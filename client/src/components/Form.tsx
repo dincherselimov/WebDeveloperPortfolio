@@ -51,7 +51,7 @@ const Form: React.FC = () => {
     e.preventDefault();
   
     try {
-      const response = await fetch('https://web-developer-portfolio-delta.vercel.app/api/sendEmail', {
+      const response = await fetch('/api/sendEmail', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
