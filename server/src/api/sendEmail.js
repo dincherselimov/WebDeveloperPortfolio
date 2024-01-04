@@ -14,36 +14,38 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const nodemailer_1 = __importDefault(require("nodemailer"));
 const sendEmail = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
-    if (req.method === 'POST') {
+    if (req.method === "POST") {
         const { name, email, message } = req.body;
         // Configure nodemailer with your email service credentials
         const transporter = nodemailer_1.default.createTransport({
-            service: 'gmail',
+            service: "gmail",
             auth: {
-                user: 'dinchitoo@gmail.com',
-                pass: 'uvsp tflj udwh dmzj ',
+                user: process.env.EMAIL_USER,
+                pass: process.env.EMAIL_PASS,
             },
-            debug: true, // Add this line
+            debug: true,
         });
         // Email options
         const mailOptions = {
-            from: 'dinchitoo@gmail.com',
-            to: 'dinchitoo@gmail.com',
-            subject: 'New Contact Form Submission',
+            from: "dinchitoo@gmail.com",
+            to: "dinchitoo@gmail.com",
+            subject: "New Contact Form Submission",
             text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
         };
         try {
             // Send email
             yield transporter.sendMail(mailOptions);
-            res.status(200).json({ success: true, message: 'Form data sent successfully!' });
+            res
+                .status(200)
+                .json({ success: true, message: "Form data sent successfully!" });
         }
         catch (error) {
-            console.error('Error sending email:', error);
-            res.status(500).json({ success: false, message: 'Error sending email.' });
+            console.error("Error sending email:", error);
+            res.status(500).json({ success: false, message: "Error sending email." });
         }
     }
     else {
-        res.status(405).json({ success: false, message: 'Method Not Allowed' });
+        res.status(405).json({ success: false, message: "Method Not Allowed" });
     }
 });
 exports.default = sendEmail;
