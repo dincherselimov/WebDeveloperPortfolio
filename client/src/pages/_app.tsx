@@ -11,7 +11,18 @@ import "@/styles/home/profSkills.css";
 import "@/styles/home/motivation.css";
 import "@/styles/home/form.css";
 import type { AppProps } from "next/app";
+import Head from "next/head"; 
 
 export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+
+  return (
+    <>
+      <Head>
+        <meta property="og:title" content="Dincher Selimov - Web Developer" />
+        <meta property="og:description" content="Explore Dincher Selimov's expertise in web development, including front-end and back-end technologies, responsive design, and more." />
+        <meta property="og:image" content="/me-removed-bg.png" />
+      </Head>
+      <Component {...pageProps} />
+    </>
+  );
 }
