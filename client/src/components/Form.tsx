@@ -15,6 +15,31 @@ const Form: React.FC = () => {
     message: '',
   });
 
+  const handleSubmit = async (e: FormEvent) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch('/api/sendEmail', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        console.log('Email sent successfully:', data.message);
+        // Optionally, you can reset the form here
+      } else {
+        console.error('Error sending email:', data.message);
+      }
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  };
+
   const contactText = PageContent.ContactMe;
 
   useEffect(() => {
@@ -47,27 +72,8 @@ const Form: React.FC = () => {
     setFormData((prevData) => ({ ...prevData, [name]: value }));
   };
 
-  const handleSubmit = async (e: FormEvent) => {
-    e.preventDefault();
-  
-    try {
-      const response = await fetch('/api/sendEmail', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
-  
-      const data = await response.json();
-      console.log(data);
-  
-      // Handle success or error messages
-    } catch (error) {
-      console.error('Error submitting form:', error);
-    }
-  };
-  
+ 
+ 
   return (
     <section className="form-section">
       <div className="div-div">
