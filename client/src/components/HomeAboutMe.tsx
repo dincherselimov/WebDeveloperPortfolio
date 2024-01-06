@@ -12,7 +12,7 @@ export default function HomeAboutMe() {
         <h2 className="title">{aboutMe.title}</h2>
         <div className="about-content">
           <div className="image-about column left">
-            <Image src={"/ai.jpg"} width={300} height={200} alt={""} />
+            <Image src={"/meeting.png"} width={300} height={200} alt={""} />
           </div>
           <div className="column right">
             <div className="text">
