@@ -19,7 +19,6 @@ section {
 .about .about-content {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: space-between;
 }
 
@@ -63,14 +62,17 @@ section .title::after {
 }
 
 .about .about-content .left {
-  width: 45%;
+  width: 43%;
 }
 
 .about .about-content .left img {
-  height: 400px;
-  width: 400px;
+  width: 500px;
   object-fit: cover;
   border-radius: 20px;
+  background: #cacaca;
+  padding-top: 30px;
+  padding-bottom: 25px;
+  margin-top: 10px;
 }
 
 .about .about-content .right {
@@ -132,9 +134,6 @@ section .title::after {
     height: unset;
   }
 
-  .about .about-content .left img {
-    height: unset;
-  }
 
   .about .about-content .right {
     width: 100%;

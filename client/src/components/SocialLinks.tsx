@@ -1,5 +1,5 @@
  const socialLinks = {
-    instagram: "#", 
+    instagram: "https://www.instagram.com/dinito_selimov", 
     facebook: "https://www.facebook.com/dINChiII",
     twitter: "https://twitter.com/DincherSel32807",
     github: "https://github.com/dincherselimov",

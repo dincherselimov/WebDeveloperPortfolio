@@ -2,10 +2,10 @@ import React from 'react';
 
 const DownloadButton = () => {
     const handleDownload = () => {
-        const urlCV = '/Dincher_Nedzhatinov Selimov_Resume.pdf';
+        const urlCV = '/DincherSelimovCV.pdf';
         const a = document.createElement('a');
         a.href = urlCV;
-        a.download = 'Dincher_Nedzhatinov_Selimov_Resume.pdf'; // Specify the desired file name
+        a.download = urlCV; 
         a.style.display = 'none';
         document.body.appendChild(a);
         a.click();
