@@ -2,7 +2,7 @@ import React from 'react';
 
 const DownloadButton = () => {
     const handleDownload = () => {
-        const urlCV = '/DincherSelimovCV.pdf';
+        const urlCV = '/DincherSelimov.pdf';
         const a = document.createElement('a');
         a.href = urlCV;
         a.download = urlCV; 
